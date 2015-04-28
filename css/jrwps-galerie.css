@@ -1,0 +1,131 @@
+.carousel--multiple {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+#section--partenaire__carousel {height: 100px;}
+#carousel-galerie {height: 300px;}
+
+.carousel--multiple .items {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#section--partenaire__carousel .items {height: 100px;}
+#carousel-galerie .items {height: 300px;}
+
+.carousel--multiple .item {
+	float: left;
+}
+
+.carousel--multiple img {
+	display: block;
+}
+
+.carousel--multiple .pastille {
+	position: relative;
+	top: 33px;
+	z-index: 1000;
+}
+
+#section--partenaire__carousel .item {
+	transition: opacity .3s;
+	-webkit-transition: opacity .3s;
+	opacity: .3;
+	padding: 0 70px;
+}
+
+#section--partenaire__carousel .item:hover,
+#section--partenaire__carousel .item:focus {
+	opacity: 1;
+}
+
+
+/* Controls */
+.carousel--multiple .carousel__control.next,
+.carousel--multiple .carousel__control.prev {
+	position: absolute;
+	top: 50%;
+	transform: translate3d(0,-50%,0);
+	-webkit-transform: translate3d(0,-50%,0);
+	-moz-transform: translate3d(0,-50%,0);
+	
+}
+
+.carousel--multiple .carousel__control.next {
+	right: 30px;
+}
+
+.carousel--multiple .carousel__control.prev {
+	left: 30px;
+}
+
+.carousel--multiple .carousel__control.next svg polyline,
+.carousel--multiple .carousel__control.prev svg polyline {
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transition: -webkit-transform .3s ease;
+	        transition: transform .3s ease;
+}
+
+.carousel--multiple .carousel__control.next:hover svg polyline,
+.carousel--multiple .carousel__control.next:focus svg polyline {
+	transform: translate3d(10px,0,0);
+	-webkit-transform: translate3d(10px,0,0);
+	-moz-transform: translate3d(10px,0,0);
+}
+
+.carousel--multiple .carousel__control.prev:hover svg polyline,
+.carousel--multiple .carousel__control.prev:focus svg polyline{
+	transform: translate3d(-10px,0,0);
+	-webkit-transform: translate3d(-10px,0,0);
+	-moz-transform: translate3d(-10px,0,0);
+}
+
+.carousel--multiple .carousel__control.next svg line,
+.carousel--multiple .carousel__control.prev svg line {
+	transform: scale3d(1,1,1);
+	-webkit-transform: scale3d(1,1,1);
+	-moz-transform: scale3d(1,1,1);
+	-webkit-transition: -webkit-transform .3s ease;
+	        transition: transform .3s ease;
+}
+.carousel--multiple .carousel__control.next:hover svg line,
+.carousel--multiple .carousel__control.next:focus svg line {
+	-webkit-transform-origin: left center;
+	    -ms-transform-origin: left center;
+	        transform-origin: left center;
+	transform: scale3d(1.2,1,1);
+	-webkit-transform: scale3d(1.2,1,1);
+	-moz-transform: scale3d(1.2,1,1);
+}
+
+.carousel--multiple .carousel__control.prev:hover svg line,
+.carousel--multiple .carousel__control.prev:focus svg line {
+	-webkit-transform-origin: right center;
+	    -ms-transform-origin: right center;
+	        transform-origin: right center;
+	transform: scale3d(1.2,1,1);
+	-webkit-transform: scale3d(1.2,1,1);
+	-moz-transform: scale3d(1.2,1,1);
+}
+
+/* partenaires controls */
+#section--partenaire__carousel .carousel__control.prev svg polyline,
+#section--partenaire__carousel .carousel__control.prev svg line,
+#section--partenaire__carousel .carousel__control.next svg polyline,
+#section--partenaire__carousel .carousel__control.next svg line {
+	stroke: #C4C0C4;
+}
+
+#section--partenaire__carousel .carousel__control.prev:hover svg polyline,
+#section--partenaire__carousel .carousel__control.prev:hover svg line,
+#section--partenaire__carousel .carousel__control.next:hover svg polyline,
+#section--partenaire__carousel .carousel__control.next:hover svg line {
+	stroke: #887E88;
+}
+
